@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1305</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FMIS 일괄등록</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="3">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="2">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="2" colspan="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="text">
+         <string>소공종코드검색</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="text">
+         <string>샘플(Excel)다운로드</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#909090;&quot;&gt;상태&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_1">
+        <property name="statusTip">
+         <string>Excel 파일 선택</string>
+        </property>
+        <property name="text">
+         <string>파일열기</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="statusTip">
+         <string>소액보수, 단가보수, 일반수선 중 선택</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 0, 0);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>소액보수</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>단가보수</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>일반수선</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_1">
+        <property name="toolTip">
+         <string>소공종코드(단일소공종의 경우)</string>
+        </property>
+        <property name="statusTip">
+         <string>소공종코드 입력</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>맑은 고딕</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#909090;&quot;&gt;소공종&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>단일소공종</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>복합소공종</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>일괄생성</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>그룹생성</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>지시목록보기</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="toolTip">
+         <string>'공종목록' 선택</string>
+        </property>
+        <property name="statusTip">
+         <string>다운로드 받은 '공종목록' 선택 후 금액 생성</string>
+        </property>
+        <property name="text">
+         <string>공종목록</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QTableView" name="tableView">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="statusTip">
+         <string>항목선택 ⇝ 더블클릭  ⇝ 복사</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(207, 207, 207);</string>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectItems</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1305</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>파일(&amp;F)</string>
+    </property>
+    <addaction name="action_O"/>
+    <addaction name="action_W"/>
+    <addaction name="separator"/>
+    <addaction name="action_X"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>도움말(&amp;H)</string>
+    </property>
+    <addaction name="action_H"/>
+    <addaction name="action_F_3"/>
+    <addaction name="separator"/>
+    <addaction name="action_A_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_C">
+    <property name="title">
+     <string>소액양식(C)</string>
+    </property>
+    <addaction name="action_Excel_O"/>
+    <addaction name="separator"/>
+    <addaction name="action_K"/>
+    <addaction name="action_C_2"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_C"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <action name="action_O">
+   <property name="text">
+    <string>열기(&amp;O)...</string>
+   </property>
+  </action>
+  <action name="action_X">
+   <property name="text">
+    <string>끝내기(&amp;X)</string>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="text">
+    <string>복사(&amp;C)</string>
+   </property>
+  </action>
+  <action name="action_F">
+   <property name="text">
+    <string>찾기(&amp;F)...</string>
+   </property>
+  </action>
+  <action name="action_H">
+   <property name="text">
+    <string>도움말 보기(&amp;H)</string>
+   </property>
+  </action>
+  <action name="action_F_3">
+   <property name="text">
+    <string>피드백 보내기(&amp;F)</string>
+   </property>
+  </action>
+  <action name="action_A_3">
+   <property name="text">
+    <string>Excel2FMIS 정보(&amp;A)</string>
+   </property>
+   <property name="iconText">
+    <string>Excel2FMIS 정보(A)</string>
+   </property>
+  </action>
+  <action name="action_W">
+   <property name="text">
+    <string>새 창(W)</string>
+   </property>
+  </action>
+  <action name="action_Excel_O">
+   <property name="text">
+    <string>보수목록(Excel) 열기(O)</string>
+   </property>
+  </action>
+  <action name="action_K">
+   <property name="text">
+    <string>보수공사승락서 생성(K)</string>
+   </property>
+  </action>
+  <action name="action_C_2">
+   <property name="text">
+    <string>준공검사조서 생성(C)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_X</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>415</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
