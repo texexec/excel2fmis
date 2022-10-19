@@ -539,7 +539,7 @@ class MainWindow(QMainWindow, Ui_MainWindow, HwpProcess):
             self.pushButton_7.setEnabled(True)
 
         except IndexError:
-            msgbox = QMessageBox.critical(self, "자료오류!", "처리할 자료에 오류가 있습니다.")
+            msgbox = QMessageBox.critical(self, "자료오류!", "자료(Excel)에 오류(IndexError)가 있습니다.")
             if msgbox == QMessageBox.Yes:
                 pass
 
@@ -560,7 +560,7 @@ class MainWindow(QMainWindow, Ui_MainWindow, HwpProcess):
             df1['소공종코드'] = category_code[menu_input]['소공종코드']
 
         except ValueError:
-            msgbox = QMessageBox.critical(self, "FMIS 일괄등록", "소공종코드가 입력되지 않았습니다.")
+            msgbox = QMessageBox.critical(self, "자료오류", "소공종코드(ValueError)가 입력되지 않았습니다.")
             if msgbox == QMessageBox.Yes:
                 self.pushButton_2.setEnabled(True)
                 self.pushButton_3.setEnabled(True)
@@ -614,7 +614,7 @@ class MainWindow(QMainWindow, Ui_MainWindow, HwpProcess):
 
         except KeyError:
             msgBox = QMessageBox()
-            msgBox.setText("선택 자료(Excel)에 오류(KeyError)가 있습니다.")
+            msgBox.setText("선택 자료에 오류(KeyError)가 있습니다.")
             msgBox.exec()
             self.pushButton_2.setEnabled(True)
             self.pushButton_3.setEnabled(True)
@@ -625,7 +625,7 @@ class MainWindow(QMainWindow, Ui_MainWindow, HwpProcess):
 
         except FileNotFoundError:
             msgBox = QMessageBox()
-            msgBox.setText("[apt_code.xlsx]를 찾을 수 없습니다.(FileNotFoundError)")
+            msgBox.setText("[apt_code.xlsx] 자료(FileNotFoundError)를 찾을 수 없습니다.")
             msgBox.exec()
             self.pushButton_2.setEnabled(True)
             self.pushButton_3.setEnabled(True)
@@ -637,7 +637,7 @@ class MainWindow(QMainWindow, Ui_MainWindow, HwpProcess):
 
         except IndexError: #공용부 에러
             msgBox = QMessageBox()
-            msgBox.setText("[동-호]에 공용부분이 있습니다.(IndexError)")
+            msgBox.setText("[동-호]에 공용부분(IndexError)이 포함되어 있습니다.")
             msgBox.exec()
             self.pushButton_2.setEnabled(True)
             self.pushButton_3.setEnabled(True)
@@ -741,17 +741,17 @@ class MainWindow(QMainWindow, Ui_MainWindow, HwpProcess):
 
         except IndexError:
             msgBox = QMessageBox()
-            msgBox.setText("선택 자료(Excel)에 오류(IndexError)가 있습니다.")
+            msgBox.setText("선택 자료에 오류(IndexError)가 있습니다.")
             msgBox.exec()
 
     def load_sample(self):
         cwd = os.getcwd()
         src = cwd
         dst = os.path.join(os.path.expanduser('~'), 'Desktop')
-        shutil.copy(os.path.join(src, "item6.xlsx"),
+        shutil.copy(os.path.join(src, "item.xlsx"),
                     os.path.join(dst, "item.xlsx"))
         msgBox = QMessageBox()
-        msgBox.setText("샘플(item.xlsx)을 바탕화면에 다운로드 하였습니다.")
+        msgBox.setText("샘플[item.xlsx]을 바탕화면에 다운로드 하였습니다.")
         msgBox.exec()
 
     def open_smallxl(self):

@@ -66,7 +66,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_9">
         <property name="text">
-         <string>샘플(Excel)다운로드</string>
+         <string>샘플(item)다운로드</string>
         </property>
        </widget>
       </item>
@@ -136,7 +136,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_1">
         <property name="statusTip">
-         <string>Excel 파일 선택</string>
+         <string>'item' 선택</string>
         </property>
         <property name="text">
          <string>파일열기</string>
@@ -174,7 +174,7 @@
          <string>소공종코드(단일소공종의 경우)</string>
         </property>
         <property name="statusTip">
-         <string>소공종코드 입력</string>
+         <string>단일 소공종코드 입력</string>
         </property>
         <property name="styleSheet">
          <string notr="true"/>
@@ -201,29 +201,21 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_2">
+        <property name="statusTip">
+         <string>좌측에 소공종코드 입력 후 선택</string>
+        </property>
         <property name="text">
-         <string>단일소공종</string>
+         <string>단일공종보기</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_3">
-        <property name="text">
-         <string>복합소공종</string>
+        <property name="statusTip">
+         <string>'item' 소공종코드 입력 후 선택</string>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_4">
         <property name="text">
-         <string>일괄생성</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_5">
-        <property name="text">
-         <string>그룹생성</string>
+         <string>복합공종보기</string>
         </property>
        </widget>
       </item>
@@ -233,10 +225,30 @@
          <string/>
         </property>
         <property name="statusTip">
-         <string/>
+         <string>동-호 별 지시목록 보기</string>
         </property>
         <property name="text">
          <string>지시목록보기</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="statusTip">
+         <string>단일 파일 생성</string>
+        </property>
+        <property name="text">
+         <string>일괄생성</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="statusTip">
+         <string>동-호 기준 다중 파일 생성</string>
+        </property>
+        <property name="text">
+         <string>그룹생성</string>
         </property>
        </widget>
       </item>
@@ -246,10 +258,10 @@
          <string>'공종목록' 선택</string>
         </property>
         <property name="statusTip">
-         <string>다운로드 받은 '공종목록' 선택 후 금액 생성</string>
+         <string>[파일열기] ⇝ 'item'  ⇝ [공종목록생성]  ⇝ '공종목록'  ⇝ 수선금액 적용[VLOOKUP]</string>
         </property>
         <property name="text">
-         <string>공종목록</string>
+         <string>수선금액생성</string>
         </property>
        </widget>
       </item>

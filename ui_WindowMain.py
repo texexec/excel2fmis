@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'WindowMainbYKUKm.ui'
+## Form generated from reading UI file 'WindowMainiUhTBC.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.0
 ##
@@ -143,6 +143,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout.addWidget(self.pushButton_3)
 
+        self.pushButton_6 = QPushButton(self.centralwidget)
+        self.pushButton_6.setObjectName(u"pushButton_6")
+
+        self.horizontalLayout.addWidget(self.pushButton_6)
+
         self.pushButton_4 = QPushButton(self.centralwidget)
         self.pushButton_4.setObjectName(u"pushButton_4")
 
@@ -152,11 +157,6 @@ class Ui_MainWindow(object):
         self.pushButton_5.setObjectName(u"pushButton_5")
 
         self.horizontalLayout.addWidget(self.pushButton_5)
-
-        self.pushButton_6 = QPushButton(self.centralwidget)
-        self.pushButton_6.setObjectName(u"pushButton_6")
-
-        self.horizontalLayout.addWidget(self.pushButton_6)
 
         self.pushButton_7 = QPushButton(self.centralwidget)
         self.pushButton_7.setObjectName(u"pushButton_7")
@@ -233,10 +233,10 @@ class Ui_MainWindow(object):
         self.action_K.setText(QCoreApplication.translate("MainWindow", u"\ubcf4\uc218\uacf5\uc0ac\uc2b9\ub77d\uc11c \uc0dd\uc131(K)", None))
         self.action_C_2.setText(QCoreApplication.translate("MainWindow", u"\uc900\uacf5\uac80\uc0ac\uc870\uc11c \uc0dd\uc131(C)", None))
         self.pushButton_8.setText(QCoreApplication.translate("MainWindow", u"\uc18c\uacf5\uc885\ucf54\ub4dc\uac80\uc0c9", None))
-        self.pushButton_9.setText(QCoreApplication.translate("MainWindow", u"\uc0d8\ud50c(Excel)\ub2e4\uc6b4\ub85c\ub4dc", None))
+        self.pushButton_9.setText(QCoreApplication.translate("MainWindow", u"\uc0d8\ud50c(item)\ub2e4\uc6b4\ub85c\ub4dc", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#909090;\">\uc0c1\ud0dc</span></p></body></html>", None))
 #if QT_CONFIG(statustip)
-        self.pushButton_1.setStatusTip(QCoreApplication.translate("MainWindow", u"Excel \ud30c\uc77c \uc120\ud0dd", None))
+        self.pushButton_1.setStatusTip(QCoreApplication.translate("MainWindow", u"'item' \uc120\ud0dd", None))
 #endif // QT_CONFIG(statustip)
         self.pushButton_1.setText(QCoreApplication.translate("MainWindow", u"\ud30c\uc77c\uc5f4\uae30", None))
         self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"\uc18c\uc561\ubcf4\uc218", None))
@@ -250,27 +250,39 @@ class Ui_MainWindow(object):
         self.lineEdit_1.setToolTip(QCoreApplication.translate("MainWindow", u"\uc18c\uacf5\uc885\ucf54\ub4dc(\ub2e8\uc77c\uc18c\uacf5\uc885\uc758 \uacbd\uc6b0)", None))
 #endif // QT_CONFIG(tooltip)
 #if QT_CONFIG(statustip)
-        self.lineEdit_1.setStatusTip(QCoreApplication.translate("MainWindow", u"\uc18c\uacf5\uc885\ucf54\ub4dc \uc785\ub825", None))
+        self.lineEdit_1.setStatusTip(QCoreApplication.translate("MainWindow", u"\ub2e8\uc77c \uc18c\uacf5\uc885\ucf54\ub4dc \uc785\ub825", None))
 #endif // QT_CONFIG(statustip)
         self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#909090;\">\uc18c\uacf5\uc885</span></p></body></html>", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\ub2e8\uc77c\uc18c\uacf5\uc885", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"\ubcf5\ud569\uc18c\uacf5\uc885", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"\uc77c\uad04\uc0dd\uc131", None))
-        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"\uadf8\ub8f9\uc0dd\uc131", None))
+#if QT_CONFIG(statustip)
+        self.pushButton_2.setStatusTip(QCoreApplication.translate("MainWindow", u"\uc88c\uce21\uc5d0 \uc18c\uacf5\uc885\ucf54\ub4dc \uc785\ub825 \ud6c4 \uc120\ud0dd", None))
+#endif // QT_CONFIG(statustip)
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\ub2e8\uc77c\uacf5\uc885\ubcf4\uae30", None))
+#if QT_CONFIG(statustip)
+        self.pushButton_3.setStatusTip(QCoreApplication.translate("MainWindow", u"'item' \uc18c\uacf5\uc885\ucf54\ub4dc \uc785\ub825 \ud6c4 \uc120\ud0dd", None))
+#endif // QT_CONFIG(statustip)
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"\ubcf5\ud569\uacf5\uc885\ubcf4\uae30", None))
 #if QT_CONFIG(tooltip)
         self.pushButton_6.setToolTip("")
 #endif // QT_CONFIG(tooltip)
 #if QT_CONFIG(statustip)
-        self.pushButton_6.setStatusTip("")
+        self.pushButton_6.setStatusTip(QCoreApplication.translate("MainWindow", u"\ub3d9-\ud638 \ubcc4 \uc9c0\uc2dc\ubaa9\ub85d \ubcf4\uae30", None))
 #endif // QT_CONFIG(statustip)
         self.pushButton_6.setText(QCoreApplication.translate("MainWindow", u"\uc9c0\uc2dc\ubaa9\ub85d\ubcf4\uae30", None))
+#if QT_CONFIG(statustip)
+        self.pushButton_4.setStatusTip(QCoreApplication.translate("MainWindow", u"\ub2e8\uc77c \ud30c\uc77c \uc0dd\uc131", None))
+#endif // QT_CONFIG(statustip)
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"\uc77c\uad04\uc0dd\uc131", None))
+#if QT_CONFIG(statustip)
+        self.pushButton_5.setStatusTip(QCoreApplication.translate("MainWindow", u"\ub3d9-\ud638 \uae30\uc900 \ub2e4\uc911 \ud30c\uc77c \uc0dd\uc131", None))
+#endif // QT_CONFIG(statustip)
+        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"\uadf8\ub8f9\uc0dd\uc131", None))
 #if QT_CONFIG(tooltip)
         self.pushButton_7.setToolTip(QCoreApplication.translate("MainWindow", u"'\uacf5\uc885\ubaa9\ub85d' \uc120\ud0dd", None))
 #endif // QT_CONFIG(tooltip)
 #if QT_CONFIG(statustip)
-        self.pushButton_7.setStatusTip(QCoreApplication.translate("MainWindow", u"\ub2e4\uc6b4\ub85c\ub4dc \ubc1b\uc740 '\uacf5\uc885\ubaa9\ub85d' \uc120\ud0dd \ud6c4 \uae08\uc561 \uc0dd\uc131", None))
+        self.pushButton_7.setStatusTip(QCoreApplication.translate("MainWindow", u"[\ud30c\uc77c\uc5f4\uae30] \u21dd 'item'  \u21dd [\uacf5\uc885\ubaa9\ub85d\uc0dd\uc131]  \u21dd '\uacf5\uc885\ubaa9\ub85d'  \u21dd \uc218\uc120\uae08\uc561 \uc801\uc6a9[VLOOKUP]", None))
 #endif // QT_CONFIG(statustip)
-        self.pushButton_7.setText(QCoreApplication.translate("MainWindow", u"\uacf5\uc885\ubaa9\ub85d", None))
+        self.pushButton_7.setText(QCoreApplication.translate("MainWindow", u"\uc218\uc120\uae08\uc561\uc0dd\uc131", None))
 #if QT_CONFIG(tooltip)
         self.tableView.setToolTip("")
 #endif // QT_CONFIG(tooltip)
